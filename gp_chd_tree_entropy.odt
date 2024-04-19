@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="PAY_1 <= 1.35\nentropy = 0.764\nsamples = 20962\nvalue = [16310, 4652]", fillcolor="#eca571"] ;
+1 [label="PAY_2 <= 1.365\nentropy = 0.647\nsamples = 18746\nvalue = [15645, 3101]", fillcolor="#ea9a60"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="entropy = 0.589\nsamples = 17135\nvalue = [14703, 2432]", fillcolor="#e9965a"] ;
+1 -> 2 ;
+3 [label="entropy = 0.979\nsamples = 1611\nvalue = [942, 669]", fillcolor="#f7dac6"] ;
+1 -> 3 ;
+4 [label="BILL_AMT1 <= -0.688\nentropy = 0.881\nsamples = 2216\nvalue = [665, 1551]", fillcolor="#8ec7f0"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="entropy = 0.923\nsamples = 74\nvalue = [49, 25]", fillcolor="#f2c19e"] ;
+4 -> 5 ;
+6 [label="entropy = 0.866\nsamples = 2142\nvalue = [616, 1526]", fillcolor="#89c5ef"] ;
+4 -> 6 ;
+}
